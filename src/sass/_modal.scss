@@ -1,0 +1,113 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 111;
+  transform: scale(.9);
+  transition: all .3s ease-out;
+  &__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 5vw);
+    height: 250px;
+    // &-project {
+    //   width: calc(100% - 5vw) !important;
+    // }
+    @media (min-width: $sm) {
+      width: 500px;
+      height: 280px;
+    }
+    @media (min-width: $md) {
+      &-project {
+        width: 700px;
+        height: 400px;
+      }
+    }
+    @media (min-width: $lg) {
+      width: 800px;
+      height: 450px;
+    }
+    @media (min-width: $xl) {
+      width: 1000px;
+      height: 562px;
+    }
+    @media (min-width: $xxl) {
+      width: 1280px;
+      height: 720px;
+    }
+  }
+  &__wrap {
+    position: relative;
+    z-index: 112;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 9px solid #fff;
+    border-radius: 22px;
+    overflow: hidden;
+  }
+  &__video {
+    width: 100%;
+    height: 100%;
+  }
+  &__btn {
+    position: absolute;
+    z-index: 115;
+    transition: all .3s ease-out;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-close {
+      background: $color-white;
+      width: 48px;
+      height: 48px;
+      top: -10px;
+      right: -10px;
+      &:hover {
+        transform: scale(1.05);
+      }
+      &:active {
+        transform: scale(.95);
+      }
+    }
+    &-left {
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      @media (min-width: $sm) {
+        &:hover {
+          left: 0;
+        }
+      }
+    }
+    &-right {
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      @media (min-width: $sm) {
+        &:hover {
+          right: 0;
+        }
+      }
+    }
+  }
+  &__icon {
+    width: 38px;
+    height: 38px;
+    color: $color-primary;
+  }
+  &__overlay {
+    position: absolute;
+    inset: 0;
+  }
+  &__img {
+    object-fit: contain;
+  }
+}

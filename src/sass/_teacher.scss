@@ -1,0 +1,46 @@
+.teacher {
+  color: $color-black;
+  padding-bottom: 100px;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+  }
+  &__card {
+    display: flex;
+    flex-flow: column;
+    gap: 24px;
+    background: $color-white;
+    border-radius: 22px;
+    align-items: center;
+    font-size: 16px;
+    padding: 24px;
+    max-width: 300px;
+    box-shadow: 3px 3px 12px rgba($color: #000000, $alpha: .15);
+    background-image: linear-gradient(-60deg, transparent, transparent 40%, #dfdfdf44 40%, #dfdfdf44 60%, transparent 60%, transparent 100%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position-x: 180%;
+    @media (min-width: $sm) {
+      font-size: 17px;
+    }
+    &:hover {
+      background-position-x: -150%;
+      transition: background-position-x 1200ms;
+    }
+  }
+  &__avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__name {
+    font-weight: bold;
+    font-size: 17px;
+    @media (min-width: $sm) {
+      font-size: 20px;
+    }
+  }
+}

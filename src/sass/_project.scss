@@ -1,0 +1,102 @@
+.project {
+  color: $color-black;
+  background: rgb(39, 123, 192);
+  background: radial-gradient(circle, rgba(39, 123, 192, 0.1) 0%, rgba(72, 144, 203, 0.1) 32%, rgba(112, 170, 219, 0.1) 61%, rgba(255, 255, 255, 1) 100%);
+  &__main {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding-block: 10px 100px;
+    gap: 24px;
+    @media (min-width: $lg) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    @media (min-width: $xl) {
+      gap: 48px;
+    }
+  }
+  .card {
+    &__item {
+      border-radius: 22px;
+      overflow: hidden;
+      background: #d5c5ab;
+      border: 6px solid $color-white;
+      box-shadow: 3px 3px 12px rgba($color: #000000, $alpha: 0.15);
+      transition: transform 0.3s ease-out;
+      cursor: pointer;
+      @media (max-width: $md) {
+        width: 100%;
+      }
+      @media (min-width: $sm) {
+        border: 9px solid $color-white;
+      }
+      &:hover {
+        transform: scale(1.03);
+      }
+      &:active {
+        transform: scale(0.97);
+      }
+    }
+    &__pic {
+      max-width: 312px;
+      height: 143px;
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        background: url('../images/camera.fill.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        z-index: 2;
+        animation: defaultPulse 4s infinite forwards;
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        @media (min-width: $sm) {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      @media (min-width: $md) {
+        height: 289px;
+      }
+      @media (min-width: $lg) {
+        height: 354px;
+      }
+      
+    }
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 60px;
+      background: #4b484d;
+      color: $color-white;
+      padding: 5px;
+      @media (min-width: $sm) {
+        height: 80px;
+      }
+    }
+  }
+}
+
+@keyframes defaultPulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.85);
+  }
+
+  70% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(0.85);
+  }
+}

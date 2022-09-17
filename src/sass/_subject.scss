@@ -1,0 +1,26 @@
+.subject {
+  background: linear-gradient(180deg, #277BC0 0%, #4890CB 100%);
+  color: $color-white;
+  &__main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    gap: 48px;
+    justify-items: center;
+    // align-items: center;
+    padding-bottom: 100px;
+    @media (min-width: $lg) {
+      grid-template-rows: 1fr 100px 1fr;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__list {
+    padding-inline: 30px;
+  }
+  &__pic-1 {
+    grid-row: span 2;
+  }
+  &__pic-2 {
+    grid-row: span 2;
+  }
+}

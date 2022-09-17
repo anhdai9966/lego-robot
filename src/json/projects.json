@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Xe Scooter",
+    "links": ["https://static.wixstatic.com/media/3e0c85_63cd35f7c718472a94fd5559a1e51963~mv2.jpg/v1/fit/w_1548,h_733,q_90/3e0c85_63cd35f7c718472a94fd5559a1e51963~mv2.webp", "https://static.wixstatic.com/media/3e0c85_2062071588c34a7e8c0e445db087da27~mv2.jpg/v1/fit/w_1548,h_733,q_90/3e0c85_2062071588c34a7e8c0e445db087da27~mv2.webp"]
+  },
+  {
+    "id": 2,
+    "name": "Xe tự cân bằng",
+    "links": ["https://static.wixstatic.com/media/3e0c85_75ac092877054a66a7e7ea0290eee529~mv2.jpg/v1/fit/w_1548,h_733,q_90/3e0c85_75ac092877054a66a7e7ea0290eee529~mv2.webp"]
+  },
+  {
+    "id": 3,
+    "name": "Robot đá bóng",
+    "links": ["https://static.wixstatic.com/media/3e0c85_112f3522e745429889813ee0b5a36490~mv2.jpg/v1/fit/w_1548,h_733,q_90/3e0c85_112f3522e745429889813ee0b5a36490~mv2.webp", "https://static.wixstatic.com/media/3e0c85_6a277fbee6e14ee891c0a4e927463bec~mv2.jpg/v1/fit/w_1548,h_733,q_90/3e0c85_6a277fbee6e14ee891c0a4e927463bec~mv2.webp", "https://static.wixstatic.com/media/3e0c85_2b4e7f87894c40f5876bb2bc2b63ca3e~mv2.jpg/v1/fit/w_1548,h_733,q_90/3e0c85_2b4e7f87894c40f5876bb2bc2b63ca3e~mv2.webp", "https://static.wixstatic.com/media/3e0c85_af7cd511b83f426398c16e9eab7c91e5~mv2.jpg/v1/fit/w_1548,h_733,q_90/3e0c85_af7cd511b83f426398c16e9eab7c91e5~mv2.webp", "https://static.wixstatic.com/media/3e0c85_dfa5a30801e14f8db1a30748869fada4~mv2.jpg/v1/fit/w_1548,h_733,q_90/3e0c85_dfa5a30801e14f8db1a30748869fada4~mv2.webp", "https://static.wixstatic.com/media/3e0c85_5a973967726f44b7bff552f506b7fb19~mv2.jpg/v1/fit/w_1548,h_733,q_90/3e0c85_5a973967726f44b7bff552f506b7fb19~mv2.webp"]
+  },
+  {
+    "id": 4,
+    "name": "Robot di chuyển theo vạch đen",
+    "links": ["https://static.wixstatic.com/media/3e0c85_213dd1ee24ec4027a8a99307ec79f57b~mv2.jpg/v1/fit/w_1423,h_733,q_90/3e0c85_213dd1ee24ec4027a8a99307ec79f57b~mv2.webp", "https://static.wixstatic.com/media/3e0c85_a818c9455df1448cb68217711b188865~mv2.jpg/v1/fit/w_1548,h_733,q_90/3e0c85_a818c9455df1448cb68217711b188865~mv2.webp", "https://static.wixstatic.com/media/3e0c85_3abc8082b23b484f8fe02e317324d8ad~mv2.jpg/v1/fit/w_1195,h_733,q_90/3e0c85_3abc8082b23b484f8fe02e317324d8ad~mv2.webp"]
+  },
+  {
+    "id": 5,
+    "name": "Xe tự hành điều khiển bằng di động",
+    "links": ["https://static.wixstatic.com/media/3e0c85_3e230b3891e34313af5194d4aaaf8502~mv2.jpg/v1/fit/w_1538,h_733,q_90/3e0c85_3e230b3891e34313af5194d4aaaf8502~mv2.webp"]
+  },
+  {
+    "id": 6,
+    "name": "Drone 4 cánh quạt",
+    "links": ["https://static.wixstatic.com/media/3e0c85_03afa097709d459483406e88155900e8~mv2.jpg/v1/fit/w_1548,h_733,q_90/3e0c85_03afa097709d459483406e88155900e8~mv2.webp"]
+  }
+]

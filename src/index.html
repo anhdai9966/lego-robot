@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Khoá học 'Lắp ráp - lập trình Lego Robot Inventor' dành cho thiếu nhi độ tuổi 9-14" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.ico" />
+    <title>Khoá học "Lắp ráp - lập trình Lego Robot Inventor"</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" defer src="./js/controller.js"></script>
+    <!-- hiệu ứng -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <button class="gototop">
+      <svg class="gototop__icon">
+        <use href="./images/icon.svg#icon-up"></use>
+      </svg>
+    </button>
+
+    <div class="modal hidden">
+      <!-- <div class="modal__wrapper">
+        <iframe class="modal__video" src="https://www.youtube.com/embed/beCJN8an_DM" title="Lắp ráp - Lập trình Lego Robot Inventor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <button class="modal__btn">
+          <svg class="modal__icon">
+            <use href='./images/icon.svg#icon-xmark'></use>
+          </svg>
+        </button>
+      </div> -->
+
+      <!-- <div class="modal__overlay"></div>
+
+      <div class="modal__wrapper modal__wrapper-project">
+        <div class="modal__wrap">
+          <img src="https://static.wixstatic.com/media/3e0c85_63cd35f7c718472a94fd5559a1e51963~mv2.jpg/v1/fit/w_1548,h_733,q_90/3e0c85_63cd35f7c718472a94fd5559a1e51963~mv2.webp" alt="lego robot" class="modal__img">
+        </div>
+
+        <button class="modal__btn modal__btn-left">
+          <svg class="modal__icon">
+            <use href='./images/icon.svg#icon-left'></use>
+          </svg>
+        </button>
+
+       <button class="modal__btn modal__btn-right">
+         <svg class="modal__icon">
+           <use href='./images/icon.svg#icon-right'></use>
+         </svg>
+       </button>
+
+        <button class="modal__btn modal__btn-close">
+          <svg class="modal__icon">
+            <use href='./images/icon.svg#icon-xmark'></use>
+          </svg>
+        </button>
+      </div> -->
+    </div>
+
+    <div class="overlay hidden"></div>
+    
+    <div class="sidebar hidden">
+      <div class="sidebar__overlay"></div>
+
+      <nav class="sidebar-nav">
+        <ul class="sidebar-nav__list">
+          <li class="sidebar-nav__item sidebar-nav__item-introduction sidebar-nav__item--active"><a href="#introduction">Giới thiệu</a></li>
+          <li class="sidebar-nav__item sidebar-nav__item-subject"><a href="#subject">Đối tượng</a></li>
+          <li class="sidebar-nav__item sidebar-nav__item-content"><a href="#content">Nội dung</a></li>
+          <li class="sidebar-nav__item sidebar-nav__item-teacher"><a href="#teacher">Giảng viên</a></li>
+          <li class="sidebar-nav__item sidebar-nav__item-price"><a href="#price">Học phí</a></li>
+          <li class="sidebar-nav__item sidebar-nav__item-contact"><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="https://lego.techmaster.vn" class="logo">
+            <img src="./images/logo.png" alt="logo techmaster" class="logo__img" />
+          </a>
+
+          <nav class="nav hidden-maw-lg">
+            <ul class="nav__list">
+              <li class="nav__item nav__item-introduction nav__item--active"><a href="#introduction">Giới thiệu</a></li>
+              <li class="nav__item nav__item-subject"><a href="#subject">Đối tượng</a></li>
+              <li class="nav__item nav__item-content"><a href="#content">Nội dung</a></li>
+              <li class="nav__item nav__item-teacher"><a href="#teacher">Giảng viên</a></li>
+              <li class="nav__item nav__item-price"><a href="#price">Học phí</a></li>
+              <li class="nav__item nav__item-contact"><a href="#contact">Liên hệ</a></li>
+            </ul>
+            <div class="nav__underline"></div>
+          </nav>
+
+          <button class="header__btn hidden-miw-lg header__btn-sidebar--open">
+            <svg class="header__icon">
+              <use href="./images/icon.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <button class="header__btn hidden-miw-lg header__btn-sidebar--close hidden">
+            <svg class="header__icon">
+              <use href="./images/icon.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section id="introduction" class="banner">
+      <div class="container">
+        <div class="banner__main">
+          <h1 class="title hidden">Lập trình Lego Robot</h1>
+
+          <svg class="headline">
+            <use href="./images/icon.svg#icon-headline"></use>
+          </svg>
+
+          <p class="sub-headline" data-aos="fade-up">Khoá học "Lắp ráp - lập trình Lego Robot Inventor".</p>
+
+          <div class="banner__wrap-btn" data-aos="zoom-in-up">
+            <a href="#contact" class="btn-primary">Liên hệ</a>
+            <a href="#subject" class="btn-secondary">Xem thêm</a>
+          </div>
+        </div>
+
+        <div class="banner__backdrop" data-aos="fade-up">
+          <img src="./images/backdrop.png" alt="lập trình Lego Robot Inventor" />
+        </div>
+      </div>
+    </section>
+
+    <section id="subject" class="subject">
+      <div class="container">
+        <div class="subject__title">
+          <h3 class="title">Đối tượng học viên</h3>
+        </div>
+
+        <div class="subject__main">
+          <div class="subject__list">
+            <ul class="list">
+              <li class="item">
+                <svg class="icon">
+                  <use href="./images/icon.svg#icon-box"></use>
+                </svg>
+
+                <span>Dành cho thiếu nhi độ tuổi từ 9-14 tuổi</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="subject__pic-1" data-aos="fade-left">
+            <div class="picture">
+              <img src="./images/pic-1.jpg" alt="lập trình Lego Robot Inventor dành cho thiếu nhi" />
+            </div>
+          </div>
+
+          <div class="subject__pic-2 hidden-maw-lg" data-aos="fade-right">
+            <div class="picture">
+              <img src="./images/pic-2.jpg" alt="lập trình Lego Robot Inventor dành cho thiếu nhi" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="feature" class="feature">
+      <div class="container">
+        <div class="feature__title">
+          <h3 class="title">Điểm đặc biệt của khóa học</h3>
+        </div>
+
+        <div class="feature__main-1">
+          <div class="feature__wrapper">
+            <svg class="ribbon-icon">
+              <use href="./images/icon.svg#icon-ribbon"></use>
+            </svg>
+
+            <div class="feature__para">
+              <p class="feature__para-1">Lắp là mê</p>
+              <p class="feature__para-2">Code là phê</p>
+            </div>
+          </div>
+
+          <div class="feature__pic" data-aos="zoom-in">
+            <div class="picture">
+              <svg class="picture__icon">
+                <use href="./images/icon.svg#icon-play"></use>
+              </svg>
+              <img src="https://i3.ytimg.com/vi/beCJN8an_DM/maxresdefault.jpg" alt="Video lập trình Lego Robot Inventor dành cho thiếu nhi" />
+            </div>
+          </div>
+        </div>
+
+        <div class="feature__main-2">
+          <div class="feature__list">
+            <div class="feature__item" data-aos="fade-up" data-aos-delay="100">
+              <svg class="feature__icon">
+                <use href="./images/icon.svg#icon-product"></use>
+              </svg>
+
+              <p>Mỗi buổi học, một sản phẩm</p>
+            </div>
+
+            <div class="feature__item" data-aos="fade-up" data-aos-delay="200">
+              <svg class="feature__icon">
+                <use href="./images/icon.svg#icon-logic"></use>
+              </svg>
+
+              <p>Cải thiện tư duy logic qua lập trình</p>
+            </div>
+
+            <div class="feature__item" data-aos="fade-up" data-aos-delay="300">
+              <svg class="feature__icon">
+                <use href="./images/icon.svg#icon-health"></use>
+              </svg>
+
+              <p>Rèn luyện khéo léo, tỷ mỷ qua lắp ráp mô hình</p>
+            </div>
+
+            <div class="feature__item" data-aos="fade-up" data-aos-delay="400">
+              <svg class="feature__icon">
+                <use href="./images/icon.svg#icon-rocket"></use>
+              </svg>
+
+              <p>Khởi đầu vững để học sinh học lập trình chuyên sâu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content" class="content">
+      <div class="container">
+        <div class="content__title">
+          <h3 class="title">Nội dung của khóa học</h3>
+        </div>
+
+        <div class="content__main">
+          <div class="content__wrapper">
+            <div class="content__list-1">
+              <ul class="list">
+                <li class="item">
+                  <svg class="icon">
+                    <use href="./images/icon.svg#icon-box"></use>
+                  </svg>
+
+                  <span>Lego Robot Inventor là bộ Lego kỹ thuật mới nhất, phiên bản tiếp theo bộ Mindstorm EV3</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="content__pic-1" data-aos="fade-up-right" data-aos-delay="100">
+              <div class="picture">
+                <img src="./images/pic-4.webp" alt="lập trình Lego Robot Inventor dành cho thiếu nhi" />
+              </div>
+            </div>
+          </div>
+
+          <div class="content__wrapper">
+            <div class="content__list-2">
+              <ul class="list">
+                <li class="item">
+                  <svg class="icon">
+                    <use href="./images/icon.svg#icon-box"></use>
+                  </svg>
+
+                  <span>Mỗi học sinh tham gia được cung cấp 1 bộ kit Lego Robot Inventor để lắp ráp các mô hình.</span>
+                </li>
+                <li class="item">
+                  <svg class="icon">
+                    <use href="./images/icon.svg#icon-box"></use>
+                  </svg>
+
+                  <span>Lập trình điều khiển bằng ngôn ngữ Scratch.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="content__pic-2" data-aos="fade-up-left" data-aos-delay="200">
+              <div class="picture">
+                <img src="./images/pic-3.webp" alt="lập trình Lego Robot Inventor dành cho thiếu nhi" />
+              </div>
+            </div>
+          </div>
+
+          <div class="content__wrapper">
+            <div class="content__list-1">
+              <ul class="list">
+                <li class="item">
+                  <svg class="icon">
+                    <use href="./images/icon.svg#icon-box"></use>
+                  </svg>
+
+                  <span>Giáo trình sử dụng trong khoá học là của giáo sư máy tính nổi tiếng Dave Parker.</span>
+                </li>
+
+                <li class="item">
+                  <svg class="icon">
+                    <use href="./images/icon.svg#icon-box"></use>
+                  </svg>
+
+                  <span>Giảng viên hướng dẫn sẽ giải thích từng kỹ thuật hay các định luật toán - vật lý ứng dụng trong mỗi mô hình</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="content__pic-1" data-aos="fade-up-right" data-aos-delay="300">
+              <div class="picture">
+                <img src="./images/pic-5.webp" alt="lập trình Lego Robot Inventor dành cho thiếu nhi" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="project">
+      <div class="container">
+        <div class="project__title">
+          <h3 class="title">Dự án tiêu biểu</h3>
+        </div>
+
+        <div class="project__main">
+          <div data-id="1" class="card__item" data-aos="fade-up" data-aos-delay="10">
+            <div class="card__pic">
+              <img src="./images/card-pic-1.webp" alt="Dự án tiêu biểu của khóa học lập trình Lego Robot Inventor dành cho thiếu nhi" />
+            </div>
+
+            <p class="card__title">Xe scooter</p>
+          </div>
+          <div data-id="2" class="card__item" data-aos="fade-up" data-aos-delay="20">
+            <div class="card__pic">
+              <img src="./images/card-pic-2.webp" alt="Dự án tiêu biểu của khóa học lập trình Lego Robot Inventor dành cho thiếu nhi" />
+            </div>
+
+            <p class="card__title">Xe tự cân bằng</p>
+          </div>
+          <div data-id="3" class="card__item" data-aos="fade-up" data-aos-delay="30">
+            <div class="card__pic">
+              <img src="./images/card-pic-3.webp" alt="Dự án tiêu biểu của khóa học lập trình Lego Robot Inventor dành cho thiếu nhi" />
+            </div>
+
+            <p class="card__title">Robot đá bóng</p>
+          </div>
+          <div data-id="4" class="card__item" data-aos="fade-up" data-aos-delay="40">
+            <div class="card__pic">
+              <img src="./images/card-pic-4.webp" alt="Dự án tiêu biểu của khóa học lập trình Lego Robot Inventor dành cho thiếu nhi" />
+            </div>
+
+            <p class="card__title">Robots di chuyển theo vạch đen</p>
+          </div>
+          <div data-id="5" class="card__item" data-aos="fade-up" data-aos-delay="50">
+            <div class="card__pic">
+              <img src="./images/card-pic-5.webp" alt="Dự án tiêu biểu của khóa học lập trình Lego Robot Inventor dành cho thiếu nhi" />
+            </div>
+
+            <p class="card__title">
+              <span class="hidden-maw-sm">Xe tự hành điều khiển bằng di động</span><span class="hidden-miw-sm">Xe tự hành đ.k bằng di động</span>
+            </p>
+          </div>
+          <div data-id="6" class="card__item" data-aos="fade-up" data-aos-delay="60">
+            <div class="card__pic">
+              <img src="./images/card-pic-6.webp" alt="Dự án tiêu biểu của khóa học lập trình Lego Robot Inventor dành cho thiếu nhi" />
+            </div>
+
+            <p class="card__title">Drone 4 cánh quạt</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="journey">
+      <div class="container">
+        <div class="journey__title">
+          <h3 class="title">Lộ trình khóa học</h3>
+        </div>
+        <div class="journey__wrapper">
+          <p class="journey__subtitle">Khóa học bao gồm 14 project:</p>
+
+          <ul class="journey__list">
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="0">Project 1: La bàn</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="10">Project 2: Radar</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="20">Project 3: Cối xay gió</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="30">Project 4: Xe tự cân bằng</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="40">Project 5: Robot đá bóng</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="50">Project 6: Drone 4 cánh quạt</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="60">Project 7: Xe scooter</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="70">Project 8: Robot tự di chuyển theo vạch đen</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="80">Project 9: Thùng rác tự động</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="90">Project 10: Xe tự hành điều khiển bằng di động</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="100">Project 11: Robot tự di chuyển theo vạch đen</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="110">Project 12: Thùng rác tự động</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="120">Project 13: Xe tự hành điều khiển bằng di động</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="130">Project 14: Xe tự hành điều khiển bằng di động</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="device" class="device">
+      <div class="container">
+        <div class="device__title">
+          <h3 class="title">Thiết bị khóa học</h3>
+        </div>
+
+        <p class="device__subtitle">Một số thiết bị chính trong khóa học<br />(lên tới 949 link kiện)</p>
+
+        <div class="device__wrapper">
+          <div class="device__card" data-aos="zoom-in">
+            <img src="./images/lk1.png" alt="Lập trình Lego Robot Inventor - Hub điều khiển trung tâm" class="device__img" />
+            <div class="device__para">
+              <p class="outline">
+                1 Hub điều khiển <br />
+                trung tâm
+              </p>
+
+              <p class="front">
+                1 Hub điều khiển <br />
+                trung tâm
+              </p>
+            </div>
+          </div>
+          <div class="device__card" data-aos="zoom-in">
+            <img src="./images/lk2.png" alt="Lập trình Lego Robot Inventor - Cảm biến khoảng cách" class="device__img" />
+
+            <div class="device__para">
+              <p class="outline">
+                1 Cảm biến <br />
+                khoảng cách
+              </p>
+
+              <p class="front">
+                1 Cảm biến <br />
+                khoảng cách
+              </p>
+            </div>
+          </div>
+          <div class="device__card" data-aos="zoom-in">
+            <img src="./images/lk3.png" alt="Lập trình Lego Robot Inventor - Motor" class="device__img" />
+
+            <div class="device__para">
+              <p class="outline">4 Motor</p>
+
+              <p class="front">4 Motor</p>
+            </div>
+          </div>
+          <div class="device__card" data-aos="zoom-in">
+            <img src="./images/lk4.png" alt="Lập trình Lego Robot Inventor - Cảm biến ánh sáng" class="device__img" />
+
+            <div class="device__para">
+              <p class="outline">
+                1 Cảm biến <br />
+                ánh sáng
+              </p>
+
+              <p class="front">
+                1 Cảm biến <br />
+                ánh sáng
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="teacher" class="teacher">
+      <div class="container">
+        <div class="teacher__title">
+          <h3 class="title">Giảng viên</h3>
+        </div>
+      </div>
+
+      <div class="teacher__wrapper">
+        <div class="teacher__card" data-aos="fade-up">
+          <div class="teacher__avatar">
+            <img src="./images/mr-loc.jpg" alt="Giảng viên" />
+          </div>
+
+          <p class="teacher__name">Nguyễn Văn Lộc</p>
+
+          <div class="teacher__list">
+            <ul class="list">
+              <li class="item">
+                <svg class="icon">
+                  <use href="./images/icon.svg#icon-box"></use>
+                </svg>
+
+                <span>Tốt nghiệp ĐH Bách Khoa Hà Nội.</span>
+              </li>
+
+              <li class="item">
+                <svg class="icon">
+                  <use href="./images/icon.svg#icon-box"></use>
+                </svg>
+
+                <span>Có 5 năm kinh nghiệm trong nghề giảng dạy lập trình.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="price" class="price">
+      <div class="container">
+        <div class="price__title">
+          <h3 class="title">Học phí</h3>
+        </div>
+      </div>
+
+      <div class="price__wrapper">
+        <div class="price__card">
+          <p class="price__p1">HỌC PHÍ</p>
+          <p class="price__p2">16.000.000 <sup style="font-size: 0.6em">VNĐ</sup></p>
+          <p class="price__p3">Cho 20 buổi học - 2giờ/buổi<br />(học phí đã bao gồm bộ kit Lego Robot Inventor )</p>
+
+          <a href="#contact" class="btn-primary price__btn">Đăng ký</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact__title">
+          <h3 class="title">Liên hệ</h3>
+        </div>
+
+        <div class="contact__wrapper" data-aos="fade-right">
+          <div class="contact__wrap">
+            <p class="contact__secs">Điền và gửi thông tin theo mẫu bên <span class="hidden-maw-lg">cạnh</span><span class="hidden-miw-lg">dưới</span> để nhận tư vấn miễn phí về khóa học, hoặc liên hệ trực tiếp với chúng tôi theo:</p>
+  
+            <div class="contact__secs">
+              <p class="contact__secs-title">
+                <svg class="contact__icon">
+                  <use href="./images/icon.svg#icon-location"></use>
+                </svg>
+  
+                <span>Địa chỉ</span>
+              </p>
+  
+              <ol>
+                <li>Cơ sở Tố Hữu: Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài, Hà Nội</li>
+                <li>Cơ sở Nguyễn Đình Chiểu: Số 14, ngõ 4, Nguyễn Đình Chiểu, Hà Nội</li>
+                <li>Cơ sở Dịch Vọng Hậu: Tầng 5, số 13 Dịch Vọng Hậu, Cầu Giấy, Hà Nội</li>
+              </ol>
+            </div>
+  
+            <div class="contact__wrap-2">
+              <div class="contact__wrap">
+                <div class="contact__secs">
+                  <p class="contact__secs-title">
+                    <svg class="contact__icon">
+                      <use href="./images/icon.svg#icon-phone"></use>
+                    </svg>
+      
+                    <span>Hotline/Zalo</span>
+                  </p>
+      
+                  <a href="tel:0987273764">098 727 3764 (Mr. Thịnh)</a>
+                </div>
+      
+                <div class="contact__secs">
+                  <p class="contact__secs-title">
+                    <svg class="contact__icon">
+                      <use href="./images/icon.svg#icon-email"></use>
+                    </svg>
+      
+                    <span>Email</span>
+                  </p>
+      
+                  <a href="mailto:thinh@techmaster.vn">thinh@techmaster.vn</a>
+                </div>
+              </div>
+    
+              <div class="contact__pic">
+                <img src="./images/mr.thinh.png" alt="Mr.Thịnh" />
+              </div>
+            </div>
+          </div>
+
+          <form class="form contact__wrap" data-aos="fade-right">
+            <div class="form__wrap">
+              <div class="form__wrap-input">
+                <input type="text" placeholder="*Họ và tên" maxlength="50" name="name" class="contact__input-name" required>
+                <p class="form__message hidden"></p>
+              </div>
+
+              <div class="form__wrap-input">
+                <input type="text" placeholder="*Số điện thoại" maxlength="50" name="phoneNumber" class="contact__input-phoneNumber" required>
+                <p class="form__message hidden"></p>
+              </div>
+            </div>
+
+            <div class="form__wrap-input">
+              <input type="email" placeholder="*Email" maxlength="50" name="email" class="contact__input-email" required>
+              <p class="form__message hidden"></p>
+            </div>
+
+            <textarea id="note" cols="30" rows="10" placeholder="Ghi chú" maxlength="500" name="note"></textarea>
+
+            <button class="btn-primary">Đăng ký</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>TechMaster Việt Nam &copy; 2022</p>
+    </footer>
+
+    <!-- hiệu ứng -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

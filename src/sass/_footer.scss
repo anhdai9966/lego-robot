@@ -1,0 +1,14 @@
+.footer {
+  background: linear-gradient(180deg, #277BC0 0%, #4890CB 100%);
+  color: $color-white;
+  font-size: 16px;
+  @media (min-width: $sm) {
+    font-size: 17px;
+  }
+  > p {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
