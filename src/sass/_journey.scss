@@ -33,7 +33,7 @@
     &:active,
     &:hover {
       background: #e6e7ea;
-      > &::after {
+      &::after {
         border-right:10px solid #e6e7ea;
       }
     }
