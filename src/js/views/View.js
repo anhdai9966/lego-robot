@@ -1,4 +1,4 @@
-import icons from 'url:../../images/icon.svg';
+// import icons from 'url:../../images/icon.svg';
 
 export default class View {
   _data;
@@ -22,7 +22,7 @@ export default class View {
     const markup = /*html*/`
       <div class="loading">
         <svg class="loading__spinner">
-          <use href='${icons}#icon-loading'></use>
+          <use href='./images/icon.svg#icon-loading'></use>
         </svg>
       </div>
     `;

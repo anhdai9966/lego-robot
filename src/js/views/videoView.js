@@ -1,6 +1,6 @@
 import ModalView from './modalView.js';
 
-import icons from 'url:../../images/icon.svg';
+// import icons from 'url:../../images/icon.svg';
 
 class VideoView extends ModalView {
   addHandlerRender(handler) {
@@ -18,12 +18,12 @@ class VideoView extends ModalView {
 
       <button class="modal__btn modal__btn-close">
         <svg class="modal__icon">
-          <use href='${icons}#icon-xmark'></use>
+          <use href='./images/icon.svg#icon-xmark'></use>
         </svg>
       </button>
     </div>
     `;
   }
 }
-
+{/* <use href='${icons}#icon-xmark'></use> */}
 export default new VideoView();

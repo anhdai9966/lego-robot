@@ -1,6 +1,6 @@
 import ModalView from './modalView.js';
 
-import icons from 'url:../../images/icon.svg';
+// import icons from 'url:../../images/icon.svg';
 
 class ProjectsView extends ModalView {
   constructor() {
@@ -26,13 +26,13 @@ class ProjectsView extends ModalView {
 
           <button data-index="${curIndex + 1}" class="modal__btn modal__btn-right">
             <svg class="modal__icon">
-              <use href='${icons}#icon-right'></use>
+              <use href='./images/icon.svg#icon-right'></use>
             </svg>
           </button>
 
           <button class="modal__btn modal__btn-close">
             <svg class="modal__icon">
-              <use href='${icons}#icon-xmark'></use>
+              <use href='./images/icon.svg#icon-xmark'></use>
             </svg>
           </button>
         </div>
@@ -51,13 +51,13 @@ class ProjectsView extends ModalView {
 
           <button data-index="${curIndex - 1}" class="modal__btn modal__btn-left">
             <svg class="modal__icon">
-              <use href='${icons}#icon-left'></use>
+              <use href='./images/icon.svg#icon-left'></use>
             </svg>
           </button>
 
           <button class="modal__btn modal__btn-close">
             <svg class="modal__icon">
-              <use href='${icons}#icon-xmark'></use>
+              <use href='./images/icon.svg#icon-xmark'></use>
             </svg>
           </button>
         </div>
@@ -76,19 +76,19 @@ class ProjectsView extends ModalView {
 
           <button data-index="${curIndex - 1}" class="modal__btn modal__btn-left">
             <svg class="modal__icon">
-              <use href='${icons}#icon-left'></use>
+              <use href='./images/icon.svg#icon-left'></use>
             </svg>
           </button>
 
           <button data-index="${curIndex + 1}" class="modal__btn modal__btn-right">
             <svg class="modal__icon">
-              <use href='${icons}#icon-right'></use>
+              <use href='./images/icon.svg#icon-right'></use>
             </svg>
           </button>
 
           <button class="modal__btn modal__btn-close">
             <svg class="modal__icon">
-              <use href='${icons}#icon-xmark'></use>
+              <use href='./images/icon.svg#icon-xmark'></use>
             </svg>
           </button>
         </div>
@@ -106,7 +106,7 @@ class ProjectsView extends ModalView {
 
         <button class="modal__btn modal__btn-close">
           <svg class="modal__icon">
-            <use href='${icons}#icon-xmark'></use>
+            <use href='./images/icon.svg#icon-xmark'></use>
           </svg>
         </button>
       </div>

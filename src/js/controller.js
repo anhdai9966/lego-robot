@@ -1,8 +1,5 @@
 import * as model from './model.js';
 
-import AOS from 'aos';
-AOS.init();
-
 import gototopView from './views/gototopView.js';
 import headerView from './views/headerView.js';
 import videoView from './views/videoView.js';
@@ -26,9 +23,9 @@ const controlVideoView = function () {
   videoView.render();
 };
 
-const controlProjectView = function (id) {
+const controlProjectView = async function (id) {
   projectsView.shownModel();
-  model.loadProducts(id);
+  await model.loadProducts(id);
   projectsView.render(model.state.product, 1);
 };
 
