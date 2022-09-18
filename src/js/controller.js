@@ -13,11 +13,11 @@ import contactView from './views/contactView.js';
 import sidebarView from './views/sidebarView.js';
 
 const controlShownSidebar = function () {
-  headerView.togglebtn()
+  headerView.togglebtn();
   sidebarView.shownSidebar();
 };
 const controlHiddenSidebar = function () {
-  headerView.togglebtn()
+  headerView.togglebtn();
   sidebarView.hiddenSidebar();
 };
 
@@ -33,9 +33,9 @@ const controlProjectView = function (id) {
 };
 
 const controlBtnLeftRight = function (index) {
-  console.log(index)
+  console.log(index);
   projectsView.render(model.state.product, index);
-}
+};
 
 const init = function () {
   headerView.addHandlerOpenSidebar(controlShownSidebar);
