@@ -10,9 +10,9 @@ class GototopView {
     // window.scrollY > 400
     // console.log(document.documentElement.scrollTop);
     if (window.scrollY > 639) {
-      this._parentElement.firstElementChild.style.transform = "translateY(0)";
+      this._parentElement.style.transform = "translateY(0)";
     } else {
-      this._parentElement.firstElementChild.style.transform = "translateY(75px)";
+      this._parentElement.style.transform = "translateY(75px)";
     }
   }
 

@@ -305,16 +305,24 @@ div[class $= "__title"]{
   top: calc(100% - 60px);
   right: 30px;
   z-index: 50;
+  background: $color-white;
+  border-radius: 50%;
+  opacity: 0.6;
+  transform: translateY(75px);
+  transition: transform 0.5s ease-out;
+  height: 42px;
+  width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    opacity: 1;
+    transform: translateY(-8px) !important;
+  }
   &__icon {
     color: $color-secondary;
     height: 36px;
     width: 36px;
-    opacity: 0.6;
-    transform: translateY(75px);
-    transition: transform 0.5s ease-out;
-    &:hover {
-      opacity: 1;
-      transform: translateY(-8px) !important;
-    }
+    margin-left: -1px;
   }
 }
