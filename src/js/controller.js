@@ -1,7 +1,6 @@
 import * as model from './model.js';
 
 import AOS from 'aos';
-import 'aos/dist/aos.css';
 AOS.init();
 
 import gototopView from './views/gototopView.js';
