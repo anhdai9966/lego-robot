@@ -2,6 +2,7 @@
   "name": "lego-robot",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html"
