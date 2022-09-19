@@ -3,9 +3,10 @@ import { validateEmail, validatePhoneNumber, validateName } from '../helpers.js'
 class ContactView {
   _parentElement = document.querySelector('.form');
 
-  _emailInput = this._parentElement.querySelector('.contact__input-email')
-  _phoneNumberInput = this._parentElement.querySelector('.contact__input-phoneNumber')
+  _emailInput = this._parentElement.querySelector('.contact__input-email');
+  _phoneNumberInput = this._parentElement.querySelector('.contact__input-phoneNumber');
   _nameInput = this._parentElement.querySelector('.contact__input-name');
+  _noteInput = this._parentElement.querySelector('.contact__input-note');
 
   _message = 'Trường này không được để trống';
 
@@ -13,6 +14,25 @@ class ContactView {
     this._handlerEmailValidator();
     this._handlerPhoneNumberValidator();
     this._handlerNameValidator();
+  }
+
+  addHandlerSubmit(handler) {
+    this._parentElement.addEventListener('submit', e => {
+      e.preventDefault();
+      const dataArr = new FormData(this._parentElement);
+      const data = Object.fromEntries(dataArr);
+      handler(data);
+    });
+  }
+
+  removeAllInputValue() {
+    this._emailInput.style.border = 'thin solid #ccc;';
+    this._phoneNumberInput.style.border = 'thin solid #ccc;';
+    this._nameInput.style.border = 'thin solid #ccc;';
+    this._emailInput.value = '';
+    this._phoneNumberInput.value = '';
+    this._nameInput.value = '';
+    this._noteInput.value = '';
   }
 
   _handlerEmailValidator() {
@@ -44,8 +64,8 @@ class ContactView {
       // this._emailInput.nextElementSibling.innerHTML = '';
       // this._emailInput.style.border = 'thin solid #ccc';
       this._emailInput.nextElementSibling.classList.remove('hidden');
-        this._emailInput.nextElementSibling.innerHTML = this._message;
-        this._emailInput.style.border = 'thin solid #FF3B30';
+      this._emailInput.nextElementSibling.innerHTML = this._message;
+      this._emailInput.style.border = 'thin solid #FF3B30';
     }
   }
 
@@ -78,8 +98,8 @@ class ContactView {
       // this._phoneNumberInput.nextElementSibling.innerHTML = '';
       // this._phoneNumberInput.style.border = 'thin solid #ccc';
       this._phoneNumberInput.nextElementSibling.classList.remove('hidden');
-        this._phoneNumberInput.nextElementSibling.innerHTML = this._message;
-        this._phoneNumberInput.style.border = 'thin solid #FF3B30';
+      this._phoneNumberInput.nextElementSibling.innerHTML = this._message;
+      this._phoneNumberInput.style.border = 'thin solid #FF3B30';
     }
   }
 

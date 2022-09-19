@@ -58,6 +58,16 @@
 
     <div class="overlay hidden"></div>
 
+    <div class="message hidden">
+      <!-- <div class="message__wrapper">
+        <svg class="message__icon">
+          <use href='./images/icon.svg#icon-done'></use>
+        </svg>
+
+        <h3>Đăng ký thành công</h3>
+      </div> -->
+    </div>
+
     <div class="sidebar hidden">
       <div class="sidebar__overlay"></div>
 
@@ -76,7 +86,7 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <a href="https://lego.techmaster.vn" class="logo">
+          <a href="https://techmaster.vn/" target="_blank" class="logo">
             <img src="./images/logo.png" alt="logo techmaster" class="logo__img" />
           </a>
 
@@ -378,20 +388,20 @@
           <p class="journey__subtitle">Khóa học bao gồm 14 project:</p>
 
           <ul class="journey__list">
-            <li class="journey__item" data-aos="fade-left" data-aos-delay="0">Project 1: La bàn</li>
-            <li class="journey__item" data-aos="fade-left" data-aos-delay="10">Project 2: Radar</li>
-            <li class="journey__item" data-aos="fade-left" data-aos-delay="20">Project 3: Cối xay gió</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="0">Project 1: Cối xay gió</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="10">Project 2: Xe tự hành điều khiển bằng di động</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="20">Project 3: La bàn</li>
             <li class="journey__item" data-aos="fade-left" data-aos-delay="30">Project 4: Xe tự cân bằng</li>
             <li class="journey__item" data-aos="fade-left" data-aos-delay="40">Project 5: Robot đá bóng</li>
             <li class="journey__item" data-aos="fade-left" data-aos-delay="50">Project 6: Drone 4 cánh quạt</li>
             <li class="journey__item" data-aos="fade-left" data-aos-delay="60">Project 7: Xe scooter</li>
             <li class="journey__item" data-aos="fade-left" data-aos-delay="70">Project 8: Robot tự di chuyển theo vạch đen</li>
             <li class="journey__item" data-aos="fade-left" data-aos-delay="80">Project 9: Thùng rác tự động</li>
-            <li class="journey__item" data-aos="fade-left" data-aos-delay="90">Project 10: Xe tự hành điều khiển bằng di động</li>
-            <li class="journey__item" data-aos="fade-left" data-aos-delay="100">Project 11: Robot tự di chuyển theo vạch đen</li>
-            <li class="journey__item" data-aos="fade-left" data-aos-delay="110">Project 12: Thùng rác tự động</li>
-            <li class="journey__item" data-aos="fade-left" data-aos-delay="120">Project 13: Xe tự hành điều khiển bằng di động</li>
-            <li class="journey__item" data-aos="fade-left" data-aos-delay="130">Project 14: Xe tự hành điều khiển bằng di động</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="90">Project 10: Robot ném bowling</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="100">Project 11: Khủng long T-Rex</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="110">Project 12: Robot đánh gold</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="120">Project 13: Xe đua F1</li>
+            <li class="journey__item" data-aos="fade-left" data-aos-delay="130">Project 14: Máy cắt cỏ</li>
           </ul>
         </div>
       </div>
@@ -471,12 +481,52 @@
       </div>
 
       <div class="teacher__wrapper">
-        <div class="teacher__card" data-aos="fade-up">
+        <a href="https://aws.techmaster.vn/img/teachers/resume-mr-cuong.html" target="_blank" class="teacher__card" data-aos="fade-up">
           <div class="teacher__avatar">
-            <img src="./images/mr-loc.jpg" alt="Giảng viên" />
+            <img src="./images/mr-cuong.webp" alt="Giảng viên" />
           </div>
 
-          <p class="teacher__name">Nguyễn Văn Lộc</p>
+          <p class="teacher__name">Trịnh Minh Cường</p>
+
+          <p>Giảng viên</p>
+
+          <div class="teacher__list">
+            <ul class="list">
+              <li class="item">
+                <svg class="icon">
+                  <use href="./images/icon.svg#icon-box"></use>
+                </svg>
+
+                <span>CTO tại Techmaster.</span>
+              </li>
+
+              <li class="item">
+                <svg class="icon">
+                  <use href="./images/icon.svg#icon-box"></use>
+                </svg>
+
+                <span>Trên 25 năm kinh nghiệm, Microsoft Technology Evangelist.</span>
+              </li>
+
+              <li class="item">
+                <svg class="icon">
+                  <use href="./images/icon.svg#icon-box"></use>
+                </svg>
+
+                <span>Đã từng làm việc tại Microsoft Vietnam, HarveyNash Vietnam, Fujitsu Vietnam, Trivision và Pacific R.I.M.</span>
+              </li>
+            </ul>
+          </div>
+        </a>
+
+        <div class="teacher__card" data-aos="fade-up" data-aos-delay="100">
+          <div class="teacher__avatar">
+            <img src="./images/mr-anh-tuan.png" alt="Giảng viên" />
+          </div>
+
+          <p class="teacher__name">Nguyễn Anh Tuấn</p>
+
+          <p>Trợ giảng</p>
 
           <div class="teacher__list">
             <ul class="list">
@@ -486,14 +536,6 @@
                 </svg>
 
                 <span>Tốt nghiệp ĐH Bách Khoa Hà Nội.</span>
-              </li>
-
-              <li class="item">
-                <svg class="icon">
-                  <use href="./images/icon.svg#icon-box"></use>
-                </svg>
-
-                <span>Có 5 năm kinh nghiệm trong nghề giảng dạy lập trình.</span>
               </li>
             </ul>
           </div>
@@ -543,7 +585,7 @@
 
               <ol>
                 <li>Cơ sở Tố Hữu: Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài, Hà Nội</li>
-                <li>Cơ sở Nguyễn Đình Chiểu: Số 14, ngõ 4, Nguyễn Đình Chiểu, Hà Nội</li>
+                <li>Cơ sở Nguyễn Đình Chiểu: Số 14, ngõ 4, Nguyễn Đình Chiểu, Lê Đại Hành, Hai Bà Trưng, Hà Nội</li>
                 <li>Cơ sở Dịch Vọng Hậu: Tầng 5, số 13 Dịch Vọng Hậu, Cầu Giấy, Hà Nội</li>
               </ol>
             </div>
@@ -559,7 +601,7 @@
                     <span>Hotline/Zalo</span>
                   </p>
 
-                  <a href="tel:0987273764">098 727 3764 (Mr. Thịnh)</a>
+                  <a href="tel:0382416368">0382 416 368 (Ms. Hương)</a>
                 </div>
 
                 <div class="contact__secs">
@@ -571,12 +613,12 @@
                     <span>Email</span>
                   </p>
 
-                  <a href="mailto:thinh@techmaster.vn">thinh@techmaster.vn</a>
+                  <a href="mailto:huong@techmaster.vn">huong@techmaster.vn</a>
                 </div>
               </div>
 
               <div class="contact__pic">
-                <img src="./images/mr.thinh.png" alt="Mr.Thịnh" />
+                <img src="./images/ms-huong.jpeg" alt="Mr.Thịnh" />
               </div>
             </div>
           </div>
@@ -599,7 +641,7 @@
               <p class="form__message hidden"></p>
             </div>
 
-            <textarea id="note" cols="30" rows="10" placeholder="Ghi chú" maxlength="500" name="note"></textarea>
+            <textarea id="note" cols="30" rows="10" placeholder="Ghi chú" maxlength="500" name="note" class="contact__input-note"></textarea>
 
             <button class="btn-primary">Đăng ký</button>
           </form>
